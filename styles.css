@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+h2,h3,p{
+    margin: 0;
+    padding: 0.7rem 0rem;
+    color: white;
+}
+.wrapper{
+    max-width: 450px;
+    margin: auto;
+    background-color: #E5E5E5;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: fit-content;
+    margin-top: 2rem;
+}
+
+.first{
+    background-color: #FA6F10;
+    padding: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.first > p {
+    padding: 0.4rem 0;
+}
+.first > p:last-child{
+    padding-bottom: 3rem;
+}
+.container {
+    min-height: 400px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+}
+.second {
+    position: absolute;
+    z-index: 100;
+    top: -2rem;
+    background-color: white;
+    width: 95%;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid gainsboro;
+    border-radius: 0.5rem;
+}
+.second > h4 {
+    margin: 1rem 0 0 0.5rem;
+    padding: 1rem 0rem;
+    
+}
+.second > ul {
+    list-style-position: inside;
+    padding-inline-start : 0
+}
+.second > ul > li {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(221, 208, 208);
+    border-radius: 0.5rem;
+}
+
+.second > button {
+    border: 1.2px solid rgb(221, 208, 208);
+    padding: 0.6rem 3rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+}
+li::marker{
+    color: #FA6F10;
+}
+.icon-container{
+    z-index: 8000;
+    max-width: fit-content;
+    background-color: #FA6F10;
+    padding: 1rem 0.8rem;
+    margin : 0rem 0rem 0rem 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -4rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06);;
+}
+.hide{
+    display: none;
+}
+.fa-solid{
+    color: white;
+}
+.floating{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    padding: 1.2rem;
+    border-radius: 100%;
+    background-color: #FA6F10;
+    border-style: none;
+}
+@media screen and (max-width : 500px) {
+    #parent{
+        max-width: 370px;
+    }
+    .second > h4 {
+        margin: 0.5rem 0rem;
+        padding: 1.5rem 0rem 0.5rem 0rem;
+        
+    }
+    .second > button {
+        margin : 0.5rem 0rem
+    }
+    .icon-container{
+        margin-left: 1.2rem;
+        padding: 0.8rem 0.6rem;
+    }
+    .second > ul {
+        margin : 0rem 0.8rem;
+    }
+}
